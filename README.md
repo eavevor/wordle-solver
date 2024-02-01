@@ -18,7 +18,7 @@ pip install .
 ```
 Where the first command is optional but will probably speed up execution
 
-With any luck, you'll see a window like "Wordle Solver"  below (just type the words into the screen and hit enter to generate the next word):
+With any luck, after running `python wordle.py` you'll see a window like "Wordle Solver"  below (just type the words into the screen and hit enter to generate the next word):
 
 ![solution.gif](solution.gif)
 
