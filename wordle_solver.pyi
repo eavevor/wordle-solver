@@ -1,0 +1,6 @@
+from typing import overload
+@overload
+def get_optimal_word(words: list[str]) -> tuple[int,str]: ...
+
+@overload
+def filter_words(words: list[str], guess: str, colours: str) -> list[str]: ...
