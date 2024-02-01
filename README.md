@@ -37,13 +37,13 @@ Where:
 
 Start words and end-words are the $n^2$ pairs of words from that $n$-word set
 
-$\{w_j\}_{j=1}^{k}$ is the remaining $k$-word subset of the $n$ words that could have produced colours consistent with the colours produced in the end word.
+${\\{w_j\\}}_{j=1}^{k}$ is the remaining $k$-word subset of the $n$ words that could have produced colours consistent with the colours produced in the end word.
 
 $k$ must be less than $n$ so the recursion will terminate
 
-$V$ is the optimal worst-case game length with $n$-word set $\{w_i\}_{i=1}^{n}$ over games where the guesses chosen must be possible answers given the previous guesses and clues. e.g:
-- $V(\{\text{BOUND, FOUND, HOUND, MOUND, POUND, ROUND, SOUND, WOUND}\}) = 8$ because each guess is either the answer or narrows the answer down by just 1 word.
-- $V(\text{\{HELLO, WORLD, EARTH\}}) \leq 2$ because guessing "EARTH" will either be correct or will reveal whether there is an "E" in the answer. We know $V(\text{\{HELLO, WORLD, EARTH\}}) > 1$ because $V = 1$ iff there's only 1 word. That means $V(\text{\{HELLO, WORLD, EARTH\}}) = 2$
+$V$ is the optimal worst-case game length with $n$-word set $\\{w_i\\}_{i=1}^{n}$ over games where the guesses chosen must be possible answers given the previous guesses and clues. e.g:
+- $V(\\{\text{BOUND, FOUND, HOUND, MOUND, POUND, ROUND, SOUND, WOUND}\\}) = 8$ because each guess is either the answer or narrows the answer down by just 1 word.
+- $V(\text{\\{HELLO, WORLD, EARTH\\}}) \leq 2$ because guessing "EARTH" will either be correct or will reveal whether there is an "E" in the answer. We know $V(\text{\\{HELLO, WORLD, EARTH\\}}) > 1$ because $V = 1$ iff there's only 1 word. That means $V(\text{\\{HELLO, WORLD, EARTH\\}}) = 2$
 - The value of the entire answer list is 6 with argmin starting words such as "FLOWN" and "STORM". This means that this restricted version of wordle (where you must make full use of previous clues) is a solved game for this ~2300-word answer list.
 
 
