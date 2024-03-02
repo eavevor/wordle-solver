@@ -58,5 +58,4 @@ M =\begin{pmatrix}
 \end{pmatrix}\begin{matrix}\\5\\4\\4\\4\end{matrix}
 ```
 - If 2 appears on the RHS of a matrix like $M$ above, you can terminate there because a value is only less than 2 if the matrix is $1 \times 1$
-- If the matrix is $2 \times 2$, the value is 2
 - Shuffling the input data seems to halve the time to check. Sorting by the quality of the word would work even better.
