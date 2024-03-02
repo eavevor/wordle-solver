@@ -51,7 +51,7 @@ Several optimisations can be made to speed up the search:
 - $V$ = 2 when $n=2$ 
 - the minimisation lends itself to multi-threading
 - for a given guess, there are only $3^5$ different clues that can be given so you only need to maximise over at most $3^5$ different end words
-- if in the following matrix $M_{ij}$ is the value starting with word $i$ and ending with word $j$, the red elements don't need to be attempted for calculation. The orange elements can be aborted early. The minimum is given by $M_{21}$. You can abort if you find a value less than or equal to number on the right hand side of the matrix
+- if in the following matrix $M_{ij}$ is the value starting with word $i$ when the answer is word $j$, the red elements don't need to be attempted for calculation. The orange elements can be aborted early. The minimum is given by $M_{21}$. You can abort if you find a value greater than or equal to number on the right hand side of the matrix
 ```math
 M =\begin{pmatrix}
 1&5&5&5&2\\4&1&2&2&3\\3&\color{orange}4&\color{red}1&\color{red}4&\color{red}4\\\color{orange}5&\color{red}5&\color{red}2&\color{red}1&\color{red}3\\\color{orange}4&\color{red}4&\color{red}5&\color{red}5&\color{red}1
